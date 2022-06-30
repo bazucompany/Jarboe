@@ -15,3 +15,9 @@ jobs:
     - stage: Tests
       php: 7.4
       script: vendor/bin/phpunit
+    - stage: Tests
+      php: 8.0
+      script: vendor/bin/phpunit
+    - stage: Tests
+      php: 8.1
+      script: vendor/bin/phpunit

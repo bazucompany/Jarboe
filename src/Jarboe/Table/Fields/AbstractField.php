@@ -13,7 +13,7 @@ use Yaro\Jarboe\Table\Fields\Traits\Hidden;
 use Yaro\Jarboe\Table\Fields\Traits\Model;
 use Yaro\Jarboe\Table\Fields\Traits\Name;
 use Yaro\Jarboe\Table\Fields\Traits\OldAndAttribute;
-use Yaro\Jarboe\Table\Fields\Traits\Readonly;
+use Yaro\Jarboe\Table\Fields\Traits\ReadonlyTrait;
 use Yaro\Jarboe\Table\Fields\Traits\Tab;
 use Yaro\Jarboe\Table\Fields\Traits\Title;
 use Yaro\Jarboe\Table\Fields\Traits\Width;
@@ -24,7 +24,7 @@ abstract class AbstractField implements FieldPropsInterface
     use Width;
     use Column;
     use Tab;
-    use Readonly;
+    use ReadonlyTrait;
     use DefaultTrait;
     use Title;
     use Name;

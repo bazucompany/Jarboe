@@ -2,7 +2,7 @@
 
 namespace Yaro\Jarboe\Table\Fields\Traits;
 
-trait Readonly
+trait ReadonlyTrait
 {
     protected $readonly = false;
 
