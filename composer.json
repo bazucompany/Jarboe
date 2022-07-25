@@ -1,13 +1,13 @@
 {
-    "name": "yaro/jarboe",
+    "name": "bazucompany/jarboe",
     "description": "Awesome package to build admin panels",
     "keywords": ["laravel", "admin", "panel", "cms", "content management system", "crud"],
     "homepage": "https://jarboe.app",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Yaro",
-            "email": "12fcv4@gmail.com"
+            "name": "BAZU",
+            "email": "sales@bazucompany.com"
         }
     ],
     "require": {
