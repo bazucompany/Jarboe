@@ -57,7 +57,7 @@ class Install extends Command
         shell_exec(sprintf(
             'mkdir -p "%s" && cp "%s" "%s"',
             base_path('resources/views/vendor/jarboe/inc/'),
-            base_path('vendor/yaro/jarboe/src/resources/views/inc/navigation.blade.php'),
+            base_path('vendor/bazucompany/jarboe/src/resources/views/inc/navigation.blade.php'),
             base_path('resources/views/vendor/jarboe/inc/navigation.blade.php')
         ));
     }
@@ -76,7 +76,7 @@ class Install extends Command
         if (!$this->isMigrationFileExist('create_admins_table.php')) {
             shell_exec(sprintf(
                 'cp "%s" "%s"',
-                base_path('vendor/yaro/jarboe/src/database/migrations/2018_06_28_152903_create_admins_table.php'),
+                base_path('vendor/bazucompany/jarboe/src/database/migrations/2018_06_28_152903_create_admins_table.php'),
                 database_path(sprintf('migrations/%s_create_admins_table.php', $date->format('Y_m_d_His')))
             ));
             $date->addSecond();
@@ -85,7 +85,7 @@ class Install extends Command
         if (!$this->isMigrationFileExist('add_otp_secret_column_to_admins_table.php')) {
             shell_exec(sprintf(
                 'cp "%s" "%s"',
-                base_path('vendor/yaro/jarboe/src/database/migrations/2019_05_18_210659_add_otp_secret_column_to_admins_table.php'),
+                base_path('vendor/bazucompany/jarboe/src/database/migrations/2019_05_18_210659_add_otp_secret_column_to_admins_table.php'),
                 database_path(sprintf('migrations/%s_add_otp_secret_column_to_admins_table.php', $date->format('Y_m_d_His')))
             ));
             $date->addSecond();
@@ -94,7 +94,7 @@ class Install extends Command
         if (!$this->isMigrationFileExist('create_versions_table.php')) {
             shell_exec(sprintf(
                 'cp "%s" "%s"',
-                base_path('vendor/yaro/jarboe/src/database/migrations/2020_07_15_213242_create_versions_table.php'),
+                base_path('vendor/bazucompany/jarboe/src/database/migrations/2020_07_15_213242_create_versions_table.php'),
                 database_path(sprintf('migrations/%s_create_versions_table.php', $date->format('Y_m_d_His')))
             ));
             $date->addSecond();
