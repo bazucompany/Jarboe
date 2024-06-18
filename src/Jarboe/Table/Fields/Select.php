@@ -141,7 +141,7 @@ class Select extends AbstractField
         return view('jarboe::crud.fields.select.list', [
             'model' => $model,
             'field' => $this,
-            'options' => $this->getOptions(),
+            'options' => !$this->isRelationField() ? $this->getOptions() : [],
         ]);
     }
 
